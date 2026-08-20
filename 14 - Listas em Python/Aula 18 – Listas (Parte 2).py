@@ -92,5 +92,3 @@ for p in galera:
         menor -= 1
 
 print(f"Maiores: {maior} - Menores: {menor}")
-
-
