@@ -1,2 +1,2 @@
-# Aprimore o exercício 093 para gerenciar múltiplos jogadores e exibir detalhes de aproveitamento individual através de um sistema de busca.
+# Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
