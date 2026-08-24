@@ -15,11 +15,10 @@ if dados['cpts'] != 0:
     dados['contratacao'] = int(input("Ano de Contratação: "))
 
     dados['salario'] = float(input("Salario: R$ "))
-    
+
     dados['aposentadoria'] = dados['idade'] + ((dados['contratacao'] + 35) - datetime.now().year)
 
 print("="*40)
 
 for k, v in dados.items():
     print(f" - {k} tem o valor {v}")
-
