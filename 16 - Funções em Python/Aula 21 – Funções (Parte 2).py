@@ -66,7 +66,7 @@ def teste():
 # Programa principal
 n = 2
 print(f"Programa Principal: {n}") # 2
-print(f"Programa Principal: {x}") # Error
+# print(f"Programa Principal: {x}") # Error
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ A variavel n é Global, funciona em todo o escopo; escopo Global;
 
 # --------------------------------------------------------------
