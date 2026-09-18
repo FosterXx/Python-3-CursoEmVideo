@@ -13,11 +13,12 @@
 #     return n*3
 
 # from uteis import fatorial, dobro # Possível também, mas não indicado;
-from uteis import numeros# 
 
-num = int(input("Digite um valor: "))
-fat = numeros.fatorial(num)
-print(f"O fatorial de {num} é {fat}!")
+# import uteis # Importar apenas o modulo que vai ser outro arquivo tipo uteis.py;
+
+# num = int(input("Digite um valor: "))
+# fat = uteis.fatorial(num)
+# print(f"O fatorial de {num} é {fat}!")
 
 # Isso foi um exemplo de modulos;
 
@@ -30,4 +31,10 @@ print(f"O fatorial de {num} é {fat}!")
 # Para isso, criamos pastas como por exemplo Uteis(pacote) -> cores(pacote) -> __init__.py (necessario ter este nome)
 
 
-# Parei em 25:57, considerar uns 24:30 e rever.
+from uteis import numeros # Importando o pacote;
+
+num = int(input("Digite um valor: "))
+fat = numeros.fatorial(num)
+print(f"O fatorial de {num} é {fat}!")
+
+###############################################################
