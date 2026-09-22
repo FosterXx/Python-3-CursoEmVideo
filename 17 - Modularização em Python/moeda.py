@@ -13,3 +13,7 @@ def dobro(valor):
 def metade(valor):
     res = valor / 2
     return res
+
+def formatacao(valor):
+    valorFormatado = "R$ " + str(round(valor,2)).replace(".",",")
+    return valorFormatado
