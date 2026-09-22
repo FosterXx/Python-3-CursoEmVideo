@@ -2,7 +2,7 @@ def aumentar(valor, taxa):
     res = valor + (valor * taxa/100)
     return res
 
-def subtrair(valor, taxa):
+def diminuir(valor, taxa):
     res = valor - (valor * taxa/100)
     return res
 
