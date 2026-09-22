@@ -2,31 +2,35 @@
 
 import moeda
 
-valor = float(input("\nDigite o valor: "))
+valor = float(input("\nDigite o valor: R$ "))
 
 print("""
-1 - Somar
-2 - Subtrair
+1 - Aumentar
+2 - Diminuir
 3 - Dobrar
 4 - Metade
 """)
-op = int(input("Digite a opção: "))
+op = 0
 
-if op == 1:
-    valorSoma = float(input("\nDigite o valor para somar: "))
-    resul = moeda.somar(valor, valorSoma)
+while op not in range(1,4+1):
+    op = int(input("Digite a opção: "))
 
-elif op == 2:
-    valorSub = float(input("\nDigite o valor para subtrair: "))
-    resul = moeda.subtrair(valor, valorSub)
+    if op in range (1,2+1):
+        taxa = float(input("\nDigite a taxa(ex: 50, 60 = %): "))
+ 
+        if op == 1:
+            resul = moeda.aumentar(valor, taxa)
 
-elif op == 3:
-    resul = moeda.dobro(valor)
-             
-elif op == 4:
-    resul = moeda.metade(valor)
+        elif op == 2:
+            resul = moeda.diminuir(valor, taxa)
 
-else:
-    print("\nDigite uma opção válida!\n")
+    elif op == 3:
+        resul = moeda.dobro(valor)
 
-print(f"\nO valor final é: {resul}\n")
+    elif op == 4:
+        resul = moeda.metade(valor)
+
+    else:
+        print("\nDigite uma opção válida!\n")
+
+print(f"\nO valor final é: R$ {resul}\n")
